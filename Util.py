@@ -6,12 +6,8 @@ def get_default_line_colors(index):
     colors.append("#651854")
     colors.append("#ce2b37")
     colors.append("#008000")
-    # colors.append((1.000, 0.752, 0.000))
-    # colors.append((0.356, 0.607, 0.835))
-    # colors.append((0.439, 0.678, 0.278))
     colors.append((0.149, 0.266, 0.470))
     colors.append((0.619, 0.282, 0.054))
-    # colors.append((0.647, 0.647, 0.647))
     return colors[index % len(colors)]
 
 def get_default_markers(index):
@@ -91,7 +87,6 @@ def get_default_hatches(index):
     hatches.append("....")
     hatches.append("+++")
     hatches.append("x" * density)
-
     hatches.append("." * density)
     hatches.append("x" * density)
     hatches.append("\\" * (density + 2))
