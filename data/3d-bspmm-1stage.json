@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "outfile": "3d-bspmm-1stage.pdf",
+      "nrows": 1,
+      "ncols": 1,
+      "figsize": [6.5, 5.8],
+      "charts": [
+        {
+          "major_ylim": [0, 150],
+          "major_ytitle": "Time (s)",
+          "legend_ncols": 1,
+          "xticklabel_angle": 45,
+          "legend_fontsize": 20,
+          "xticklabel_fontsize": 18,
+          "yticklabel_fontsize": 18,
+          "xticklabels": ["Baseline", "Casper-2", "Casper-4", "Casper-8", "Casper-2 (D)", "Daps"],
+          "bars": [
+            {
+              "barindex": 5,
+              "barlabels": ["$T_{comp}$", "$T_{comm}$"],
+              "yvalues": [[17.531, 21.395, 25.255, 36.974, 21.554, 18.03], [115.434, 17.389, 12.228, 10.126, 18.536, 20.729]]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

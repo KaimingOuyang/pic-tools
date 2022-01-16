@@ -1,0 +1,26 @@
+{
+  "figures": [
+    {
+      "outfile": "minighost-scalability-ratio.pdf",
+      "nrows": 1,
+      "ncols": 1,
+      "figsize": [5, 4],
+      "charts": [
+        {
+          "xtitle": "#Process",
+          "major_ytitle": "Ratio (Intra/Inter)",
+          "xticklabels": ["72", "144", "288", "576", "1152", "2304", "4608"],
+          "legend_loc": "top",
+          "legend_ncols": 2,
+          "bars": [
+            {
+              "yvalues": [
+                [2.6047738,1.218006006,1.179041286,0.5809642771,0.6042875743,0.5596211294,0.5451938264]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

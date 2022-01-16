@@ -1,0 +1,51 @@
+{
+  "figures": [
+    {
+      "outfile": "mpilib-cmp-bdw.png",
+      "nrows": 1,
+      "ncols": 1,
+      "figsize": [7, 3.5],
+      "charts": [
+        {
+          "major_ytitle": "Time (us)",
+          "major_ylim": [0, 6500],
+          "legend_loc": "right",
+          "legend_ncols": 1,
+          "legend_fontsize": 13,
+          "bars": [
+            {
+              "barlabels": ["MPICH-posix"],
+              "yvalues": [[4715.537]],
+              "errorbars": [[786.817]]
+            },
+            {
+              "barlabels": ["MPICH-xpmem-coop"],
+              "yvalues": [[2192.875]],
+              "errorbars": [[178.563]]
+            },
+            {
+              "barlabels": ["PiP-MPI (baseline)"],
+              "yvalues": [[3477.536]],
+              "errorbars": [[30.766]]
+            },
+            {
+              "barlabels": ["OpenMPI-cma"],
+              "yvalues": [[4582.447]],
+              "errorbars": [[28.852]]
+            },
+            {
+              "barlabels": ["MPC"],
+              "yvalues": [[2155.502]],
+              "errorbars": [[14.591]]
+            },
+            {
+              "barlabels": ["CAB-MPI"],
+              "yvalues": [[897.43]],
+              "errorbars": [[12.816]]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

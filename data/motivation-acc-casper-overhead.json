@@ -1,0 +1,47 @@
+{
+  "figures": [
+    {
+      "outfile": "acc-casper-overhead.pdf",
+      "nrows": 1,
+      "ncols": 1,
+      "figsize": [5, 4.5],
+      "charts": [
+        {
+          "minor_ytitle": "Percentage (\\%)",
+          "major_ylim": [-40, 200],
+          "minor_ylim": [-20, 100],
+          "legend_ncols": 2,
+          "legend_loc": "top",
+          "legend_fontsize": 20,
+          "xticklabel_angle": 0,
+          "xticklabel_fontsize": 20,
+          "yticklabel_fontsize": 20,
+          "xticklabels": ["Baseline", "Casper (1 Ghost)"],
+          "bars": [
+            {
+              "barlabels": ["$T_{comm}$", "$T_{comp}$"],
+              "yvalues": [
+                [31.36, 34.57],
+                [56.18, 109.36]
+              ]
+            },
+            {
+              "barlabels": ["$T_{run}$"],
+              "yvalues": [[92.92, 115.34]]
+            },
+            {
+              "axes" : "minor",
+              "barlabels": ["$R_{op}$"],
+              "yvalues": [[-17.20, 82.71]]
+            },
+            {
+              "axes" : "minor",
+              "barlabels": ["$R_{oh}$"],
+              "yvalues": [[0, 24.12]]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

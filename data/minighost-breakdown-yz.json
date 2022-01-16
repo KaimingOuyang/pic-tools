@@ -1,0 +1,124 @@
+{
+  "figures": [
+    {
+      "outfile": "minighost-breakdown-yz.pdf",
+      "nrows": 1,
+      "ncols": 1,
+      "figsize": [9, 2.5],
+      "charts": [
+        {
+          "xtitle": "Method (nx=ny=nz)",
+          "major_ytitle": "Time (s)",
+          "legend_loc": "top",
+          "legend_ncols": 2,
+          "xticklabels_ha": "right",
+          "xticklabel_angle": 45,
+          "xticklabel_fontsize": 8,
+          "yticklabel_fontsize": 12,
+          "bars": [
+            {
+              "xticklabels": [
+                "XPMEM-Single(4)",
+                "XPMEM-Single(8)",
+                "XPMEM-Single(12)",
+                "XPMEM-Single(16)",
+                "XPMEM-Single(24)",
+                "XPMEM-Single(32)",
+                "XPMEM-Single(48)",
+                "XPMEM-Single(64)",
+                "XPMEM-Single(96)",
+                "XPMEM-Single(128)",
+                "XPMEM-Single(160)",
+                "XPMEM-Single(192)",
+                "XPMEM-Single(256)"
+              ],
+              "barlabels": ["YZ-Intra-Node", "YZ-Inter-Node"],
+              "yvalues": [
+                [
+                  191.359,
+                  174.841,
+                  145.238,
+                  132.719,
+                  108.1,
+                  83.298,
+                  40.493,
+                  30.326,
+                  23.874,
+                  21.353,
+                  19.084,
+                  17.384,
+                  15.484
+                ],
+                [
+                  120.758,
+                  114.765,
+                  112.885,
+                  82.862,
+                  62.744,
+                  49.282,
+                  19.768,
+                  17.534,
+                  12.574,
+                  10.518,
+                  10.18,
+                  8.924,
+                  9.273
+                ]
+              ]
+            },
+            {
+              "xticklabels": [
+                "XPMEM-COOP(4)",
+                "XPMEM-COOP(8)",
+                "XPMEM-COOP(12)",
+                "XPMEM-COOP(16)",
+                "XPMEM-COOP(24)",
+                "XPMEM-COOP(32)",
+                "XPMEM-COOP(48)",
+                "XPMEM-COOP(64)",
+                "XPMEM-COOP(96)",
+                "XPMEM-COOP(128)",
+                "XPMEM-COOP(160)",
+                "XPMEM-COOP(192)",
+                "XPMEM-COOP(256)"
+              ],
+              "barindex": 0,
+              "yvalues": [
+                [
+                  201.216,
+                  181.212,
+                  160.49,
+                  138.418,
+                  114.541,
+                  90.391,
+                  42.874,
+                  29.963,
+                  23.282,
+                  20.535,
+                  18.705,
+                  16.886,
+                  14.121
+                ],
+                [
+                  185.109,
+                  167.29,
+                  151.519,
+                  120.059,
+                  94.062,
+                  75.375,
+                  32.463,
+                  21.039,
+                  17.172,
+                  15.703,
+                  14.729,
+                  12.896,
+                  12.161
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

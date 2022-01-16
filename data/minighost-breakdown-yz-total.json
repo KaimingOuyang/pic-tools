@@ -1,0 +1,39 @@
+{
+  "figures": [
+    {
+      "outfile": "minighost-breakdown-yz.pdf",
+      "nrows": 1,
+      "ncols": 1,
+      "figsize": [9, 2.5],
+      "charts": [
+        {
+          "xtitle": "nx=ny=nz",
+          "major_ytitle": "Time (s)",
+          "legend_loc": "top",
+          "legend_ncols": 2,
+          "xticklabel_fontsize": 8,
+          "yticklabel_fontsize": 12,
+          "xticklabels": ["4", "8", "12", "16", "24", "32", "48", "64", "96", "128", "160", "192", "256"],
+          "bars": [
+            { 
+              "barlabels": ["XPMEM-Single"],
+              "yvalues": [
+                [
+                  326.501,301.681,279.631,255.107,230.028,200.923,144.282,129.301,123.935,121.564,119.905,120.742,126.36
+                ]
+              ]
+            },
+            {
+              "barlabels": ["XPMEM-Coop"],
+              "yvalues": [
+                [
+                  332.461	312.633	280.159	266.124	235.223	203.253	146.713	133.664	127.27	124.94	121.863	123.047	130.061
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

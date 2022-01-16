@@ -1,0 +1,49 @@
+{
+  "figures": [
+    {
+      "outfile": "3d-bspmm-weak-stealing.pdf",
+      "nrows": 1,
+      "ncols": 1,
+      "figsize": [8, 5],
+      "charts": [
+        {
+          "major_ylim": [0, 500],
+          "xticklabel_angle": 0,
+          "legend_fontsize": 18,
+          "xticklabel_fontsize": 18,
+          "major_ytitle": "Time (s)",
+          "xtitle": "\\#Process",
+          "yticklabel_fontsize": 18,
+          "xticklabels": ["72", "144","216","288","432","576"],
+          "bars": [
+            {
+              "bar_offset": 0.3,
+              "barlabels": ["Baseline"],
+              "yvalues": [[67.066,132.028,193.966,244.583,352.816,441.291]]
+            },
+            {
+              "bar_offset": 0.3,
+              "barlabels": ["Thread"],
+              "yvalues": [[62.275, 113.385, 0, 0, 0, 0]]
+            },
+            {
+              "bar_offset": 0.3,
+              "barlabels": ["Casper"],
+              "yvalues": [[55, 90.958,125.22,152.67,239.636,352.073]]
+            },
+            {
+              "bar_offset": 0.3,
+              "barlabels": ["Casper-2 (D)"],
+              "yvalues": [[60.116,94.315,134.017,158.256,226.805,272.825]]
+            },
+            {
+              "bar_offset": 0.3,
+              "barlabels": ["Daps"],
+              "yvalues": [[55.229,84.105,106.558,126.786,171.355,218.677]]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

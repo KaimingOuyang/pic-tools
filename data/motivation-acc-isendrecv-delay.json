@@ -1,0 +1,40 @@
+{
+  "figures": [
+    {
+      "outfile": "acc-isendrecv-delay.pdf",
+      "nrows": 1,
+      "ncols": 1,
+      "figsize": [5.5, 3.5],
+      "charts": [
+        {
+          "major_ytitle": "Time (us)",
+          "minor_ytitle": "Overlap Ratio (\\%)",
+          "major_ylim": [0, 17000],
+          "minor_ylim": [0, 20],
+          "legend_ncols": 2,
+          "legend_loc": "top",
+          "xticklabel_angle": 0,
+          "xticklabels": ["Accumulate", "Isendrecv"],
+          "bars": [
+            {
+              "barlabels": ["$T_{comm}$", "$T_{comp}$"],
+              "yvalues": [
+                [5410.596, 8106.401],
+                [5095.144, 5097.044]
+              ]
+            },
+            {
+              "barlabels": ["$T_{run}$"],
+              "yvalues": [[10465.878, 13157.338]]
+            },
+            {
+              "axes" : "minor",
+              "barlabels": ["$R_{op}$"],
+              "yvalues": [[0.74, 0.57]]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -7,6 +7,9 @@ class Line:
         
 
     # Line class - list of functionalities
+    def set_axes(self, axes):
+        self.axes = axes
+
     def set_color(self, color):
         self.color = color
 
@@ -37,6 +40,9 @@ class Line:
     def set_markersize(self, markersize):
         self.markersize = markersize
 
+    def set_lineindex(self, lineindex):
+        self.lineindex = lineindex
+        
     # Line class - default attribute settings
     def set_default_settings(self):
         self.color = None
@@ -55,6 +61,7 @@ class Line:
 
     # Line class - register funcs for commands
     def register_funcs(self):
+        self.func_table["axes"] = self.set_axes
         self.func_table["color"] = self.set_color
         self.func_table["linelabel"] = self.set_linelabel
         self.func_table["yvalues"] = self.set_yvalues
@@ -65,6 +72,7 @@ class Line:
         self.func_table["capsize"] = self.set_capsize
         self.func_table["errorbars_capthick"] = self.set_errorbars_capthick
         self.func_table["markersize"] = self.set_markersize
+        self.func_table["lineindex"] = self.set_lineindex
     
     def parse_line_cmd(self, line_cmd):
         for key in line_cmd:

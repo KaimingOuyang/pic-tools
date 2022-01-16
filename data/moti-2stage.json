@@ -1,0 +1,28 @@
+{
+  "figures": [
+    {
+      "outfile": "moti-2stage.pdf",
+      "nrows": 1,
+      "ncols": 1,
+      "figsize": [4, 3.8],
+      "charts": [
+        {
+          "major_ytitle": "Time (s)",
+          "major_ylim": [0, 350],
+          "legend_ncols": 1,
+          "xticklabel_angle": 45,
+          "legend_fontsize": 16,
+          "xticklabel_fontsize": 16,
+          "yticklabel_fontsize": 16,
+          "xticklabels": ["Baseline", "Casper-1", "Casper-2", "Casper-4", "Casper-8"],
+          "bars": [
+            {
+              "barlabels": ["$T_{compute}$", "$T_{comm}$"],
+              "yvalues": [[0.021, 0.024, 0.027, 0.027, 0.041], [64.25, 330.541, 183.46, 123.273, 85.568]]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "figures": [
+    {
+      "outfile": "sleep-put-bench.pdf",
+      "nrows": 1,
+      "ncols": 1,
+      "figsize": [4, 3.8],
+      "charts": [
+        {
+          "major_ylim": [0, 500],
+          "show_legend": false,
+          "xticklabel_angle": 0,
+          "legend_fontsize": 16,
+          "xticklabel_fontsize": 16,
+          "yticklabel_fontsize": 16,
+          "xticklabels": ["Baseline", "Thread", "Casper", "DAPS"],
+          "bars": [
+            {
+              "barlabels": ["$T_{sleep}$", "$T_{comm}$"],
+              "yvalues": [[200, 200, 200, 200], [147.56, 0.10, 0.09, 0.10]],
+              "errorbars": [[0, 0, 0, 0], [1.43, 4.90, 0.40, 2.72]]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

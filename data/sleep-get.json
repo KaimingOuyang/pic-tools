@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "outfile": "sleep-get-bench.pdf",
+      "nrows": 1,
+      "ncols": 1,
+      "figsize": [4, 3.8],
+      "charts": [
+        {
+          "major_ytitle": "Time (ms)",
+          "major_ylim": [0, 500],
+          "show_legend": false,
+          "xticklabel_angle": 0,
+          "legend_fontsize": 16,
+          "xticklabel_fontsize": 16,
+          "yticklabel_fontsize": 16,
+          "xticklabels": ["Baseline", "Thread", "Casper", "DAPS"],
+          "bars": [
+            {
+              "barlabels": ["$T_{sleep}$", "$T_{comm}$"],
+              "yvalues": [[200, 200, 200, 200], [151.811, 0.103, 0.093, 0.100]],
+              "errorbars": [[0, 0, 0, 0], [7.38, 4.51, 9.14, 4.39]]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

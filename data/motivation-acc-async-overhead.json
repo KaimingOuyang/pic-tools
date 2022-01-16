@@ -1,0 +1,47 @@
+{
+  "figures": [
+    {
+      "outfile": "acc-async-overhead.pdf",
+      "nrows": 1,
+      "ncols": 1,
+      "figsize": [5, 4.5],
+      "charts": [
+        {
+          "major_ytitle": "Time (ms)",
+          "major_ylim": [-40, 200],
+          "minor_ylim": [-20, 100],
+          "legend_ncols": 2,
+          "legend_loc": "top",
+          "xticklabel_angle": 0,
+          "legend_fontsize": 20,
+          "xticklabel_fontsize": 20,
+          "yticklabel_fontsize": 20,
+          "xticklabels": ["Baseline", "Async Thread"],
+          "bars": [
+            {
+              "barlabels": ["$T_{comm}$", "$T_{comp}$"],
+              "yvalues": [
+                [33.34, 42.29],
+                [54.01, 106.81]
+              ]
+            },
+            {
+              "barlabels": ["$T_{run}$"],
+              "yvalues": [[92.55, 117.19]]
+            },
+            {
+              "axes" : "minor",
+              "barlabels": ["$R_{op}$"],
+              "yvalues": [[-15.6, 75.5]]
+            },
+            {
+              "axes" : "minor",
+              "barlabels": ["$R_{oh}$"],
+              "yvalues": [[0, 26.6]]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

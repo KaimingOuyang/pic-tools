@@ -7,6 +7,9 @@ class Bar:
         self.parse_bar_cmd(bar_cmd)
 
     # Line class - list of functionalities
+    def set_axes(self, axes):
+        self.axes = axes
+    
     def set_barcolors(self, barcolors):
         self.barcolors = barcolors
     
@@ -33,6 +36,9 @@ class Bar:
 
     def set_linewidth(self, linewidth):
         self.linewidth = linewidth
+    
+    def set_bar_offset(self, bar_offset):
+        self.bar_offset = bar_offset
 
     def set_capsize(self, capsize):
         self.capsize = capsize
@@ -53,8 +59,9 @@ class Bar:
         self.errorbars = None
         self.xticklabels = None
         self.axes = "major"
-        self.barwidth = 2
+        self.barwidth = 3
         self.linewidth = 0.5
+        self.bar_offset = 0.0
         self.barindex = 0
         self.capsize = 2
         self.errorbars_capthick = 1.3
@@ -62,6 +69,7 @@ class Bar:
 
     # Line class - register funcs for commands
     def register_funcs(self):
+        self.func_table["axes"] = self.set_axes
         self.func_table["barcolors"] = self.set_barcolors
         self.func_table["edgecolors"] = self.set_edgecolors
         self.func_table["hatches"] = self.set_hatches
@@ -71,6 +79,7 @@ class Bar:
         self.func_table["xticklabels"] = self.set_xticklabels
         self.func_table["barwidth"] = self.set_barwidth
         self.func_table["linewidth"] = self.set_linewidth
+        self.func_table["bar_offset"] = self.set_bar_offset
         self.func_table["capsize"] = self.set_capsize
         self.func_table["errorbars_capthick"] = self.set_errorbars_capthick
         self.func_table["barindex"] = self.set_barindex

@@ -1,0 +1,30 @@
+{
+  "figures": [
+    {
+      "outfile": "one-stage-get-perf.pdf",
+      "nrows": 1,
+      "ncols": 1,
+      "figsize": [5, 4.6],
+      "charts": [
+        {
+          "major_ytitle": "Time (ms)",
+          "major_ylim": [0, 150],
+          "legend_ncols": 2,
+          "legend_loc": "top",
+          "xticklabel_angle": 0,
+          "legend_fontsize": 20,
+          "xticklabel_fontsize": 20,
+          "yticklabel_fontsize": 20,
+          "xticklabels": ["Baseline", "AT", "Casper", "DPS"],
+          "bars": [
+            {
+              "barlabels": ["$T_{sleep}$", "$T_{comm}$"],
+              "yvalues": [[200, 200, 200, 200], [25.218, 0.435, 0.012, 0.004]],
+              "errorbars": [[0, 0, 0, 0], [0.49, 2.99, 0.18, 0.64]]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

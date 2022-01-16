@@ -1,0 +1,47 @@
+{
+  "figures": [
+    {
+      "outfile": "minighost-scalability.png",
+      "nrows": 1,
+      "ncols": 1,
+      "figsize": [9, 2.5],
+      "charts": [
+        {
+          "xtitle": "#Process",
+          "major_ytitle": "Time (s)",
+          "minor_ylim": [1.2, 1.4],
+          "xticklabels": ["72", "144", "288", "576", "1152", "2304", "4608"],
+          "minor_ytitle": "Speedup",
+          "legend_loc": "top",
+          "legend_ncols": 2,
+          "bars": [
+            {
+              "barlabels": ["Baseline"],
+              "yvalues": [
+                [231.495, 245.795, 256.217, 276.964, 278.402, 267.164, 287.841]
+              ]
+            },
+            {
+              "barlabels": ["MPICH-xpmem-coop"],
+              "yvalues": [[208.913, 236.778, 260.318, 271.019, 270.383, 271.562, 280.937]]
+            },
+            {
+              "barlabels": ["CAB-MPI"],
+              "yvalues": [
+                [171.211, 192.312, 198.569, 214.113, 215.038, 214.825, 231.844]
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "axes": "minor",
+              "lineindex": 3,
+              "linelabel": "CAB-MPI Speedup",
+              "yvalues": [1.35, 1.28, 1.29, 1.29, 1.29, 1.24, 1.24]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

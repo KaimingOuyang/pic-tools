@@ -1,0 +1,56 @@
+{
+  "figures": [
+    {
+      "outfile": "mpilib-cmp-knl.pdf",
+      "nrows": 1,
+      "ncols": 1,
+      "figsize": [5, 4.5],
+      "charts": [
+        {
+          "major_ytitle": "Time (us)",
+          "major_ylim": [0, 7000],
+          "legend_loc": "top",
+          "legend_ncols": 2,
+          "legend_fontsize": 13,
+          "bars": [
+            {
+              "barlabels": ["MPICH-posix"],
+              "yvalues": [[4404.621]],
+              "errorbars": [[48.899]]
+            },
+            {
+              "barlabels": ["MPICH-xpmem"],
+              "yvalues": [[2500.719]],
+              "errorbars": [[93.591]]
+            },
+            {
+              "barlabels": ["OpenMPI-cma"],
+              "yvalues": [[6364.671]],
+              "errorbars": [[272.338]]
+            },
+            {
+              "barlabels": ["OpenMPI-xpmem"],
+              "yvalues": [[3443.434]],
+              "errorbars": [[74.129]]
+            },
+            {
+              "barlabels": ["MVAPICH"],
+              "yvalues": [[6056.664]],
+              "errorbars": [[88.121]]
+            },
+            {
+              "barlabels": ["CAB-MPI"],
+              "yvalues": [[896.297]],
+              "errorbars": [[26.77]]
+            },
+            {
+              "barlabels": ["MPC"],
+              "yvalues": [[225639.047]],
+              "errorbars": [[2140.362]]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,8 +1,14 @@
 import json
 import sys
 from Figure import Figure
+import matplotlib
 
 if __name__ == "__main__":
+    matplotlib.rcParams['ps.useafm'] = True
+    matplotlib.rcParams['pdf.use14corefonts'] = True
+    matplotlib.rcParams['text.usetex'] = True   
+    matplotlib.rcParams['font.sans-serif'] = ["Helvetica"]
+    # matplotlib.rcParams['font.family'] = "sans-serif"
     filename = sys.argv[1]
     with open(filename, "r") as jfile:
         figs_dict = json.load(jfile)

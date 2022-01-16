@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "outfile": "sleep-isendrecv-bench.pdf",
+      "nrows": 1,
+      "ncols": 1,
+      "figsize": [4, 3.8],
+      "charts": [
+        {
+          "major_ylim": [0, 300],
+          "legend_loc": "right",
+          "legend_ncols": 1,
+          "xticklabel_angle": 0,
+          "legend_fontsize": 18,
+          "xticklabel_fontsize": 16,
+          "yticklabel_fontsize": 16,
+          "xticklabels": ["Baseline", "Thread", "Casper", "DAPS"],
+          "bars": [
+            {
+              "barlabels": ["$T_{sleep}$", "$T_{comm}$"],
+              "yvalues": [[200, 200, 200, 200], [32.842, 0.097, 32.963, 0.095]],
+              "errorbars": [[0, 0, 0, 0], [0.266, 0.103, 0.287, 0.560]]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

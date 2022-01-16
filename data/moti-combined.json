@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "outfile": "moti-combined.pdf",
+      "nrows": 1,
+      "ncols": 1,
+      "figsize": [15, 5],
+      "charts": [
+        {
+          "major_ytitle": "Time (s)",
+          "major_ylim": [0, 130],
+          "legend_ncols": 2,
+          "xticklabel_angle": 0,
+          "legend_fontsize": 22,
+          "xticklabel_fontsize": 18,
+          "yticklabel_fontsize": 20,
+          "xticklabels": ["Baseline", "Thread-2", "Thread-4", "Thread-8", "Casper-2", "Casper-4", "Casper-8", "Thread (O)", "Ideal"],
+          "bars": [
+            {
+              "barlabels": ["$T_{comp1}$", "$T_{comm1}$", "$T_{comp2}$", "$T_{comm2}$"],
+              "yvalues": [[22.178, 26.257, 30.911, 45.147, 26.338, 31.228, 45.592, 44.241, 22.178], [32.464, 1.489, 1.093, 0.668, 0.703, 1.284, 0.811, 1.055, 0.668], 
+              [4.163, 4.764, 5.68, 8.421, 4.801, 5.78, 8.474, 6.109, 4.163], [46.495, 59.742, 49.193, 36.162, 43.582, 39.836, 30.614, 38.332, 30.614]]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
